@@ -1,0 +1,117 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+/* Estilos para o corpo e header */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4682B4;
+    color: white;
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    max-width: 200px;
+}
+
+header div {
+    display: flex;
+    gap: 10px;
+}
+
+header button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4682B4;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+header button:hover {
+    background-color: #357ca5;
+}
+
+/* Estilos para o título da seção */
+.suite-section {
+    padding: 20px;
+    text-align: center;
+}
+
+h3 {
+    font-size: 35px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Estilos para a galeria de fotos */
+.foto-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 20px;
+    padding: 0 20px;
+}
+
+.foto {
+    overflow: hidden;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-color: #fff;
+    border-radius: 8px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.foto:hover {
+    transform: translateY(-5px);
+}
+
+.foto img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    display: block;
+    border-radius: 8px 8px 0 0;
+}
+
+/* Estilos para o rodapé */
+footer {
+    background-color: #989696;
+    color: #333;
+    text-align: center;
+    padding: 20px;
+    bottom: 0;
+    width: 100%;
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Estilos específicos para o botão "Reservar" */
+.reserve-button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: block;
+    width: 100%;
+    max-width: 200px; /* Limita a largura máxima do botão */
+    margin: 0 auto; /* Centraliza horizontalmente */
+}
+
+.reserve-button:hover {
+    background-color: #555;
+}

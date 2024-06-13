@@ -1,0 +1,171 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+    background-color: #4682B4;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    max-width: 200px;
+    margin-left: 2%;
+}
+
+header div {
+    display: flex;
+    gap: 10px;
+}
+
+header button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4682B4;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+header button:hover {
+    background-color: white;
+    color: #4682B4;
+}
+
+.container {
+    text-align: center;
+    max-width: 100%;
+    margin: 0 auto; /* Centraliza o conteúdo horizontalmente */
+}
+
+main {
+    padding: 2%;
+    height: 100vh; /* Defina a altura como 100% da altura da janela do navegador */
+}
+
+.content {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2%;
+}
+
+.contact-column,
+.form-column {
+    flex: 1;
+    margin: 0;
+    width: 50%; /* Defina a largura como 50% */
+    padding: 0 2%;
+}
+
+.contact-column h1,
+.form-column h1 {
+    text-align: center;
+}
+
+.form-column form {
+    margin-top: 2%;
+    text-align: center; /* Centraliza o conteúdo do formulário */
+}
+
+.form-column form label {
+    display: block;
+    margin-bottom: 5px;
+    text-align: justify;
+}
+
+.form-column form input[type="text"],
+.form-column form input[type="email"],
+.form-column form textarea {
+    width: 100%;
+    padding: 2%;
+    margin-bottom: 2%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+.form-column form input[type="submit"] {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4682B4; 
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+.form-column form input[type="submit"]:hover {
+    background-color: white; 
+    color: #4682B4; 
+}
+
+iframe {
+    width: 100%; /* Faz o mapa ocupar 100% da largura do contêiner */
+    height: 100%; /* Faz o mapa ocupar 100% da altura do contêiner */
+}
+
+footer {
+    padding: 20px;
+    background-color: #989696;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
+}
+
+footer p {
+    margin: 0;
+    text-align: center; /* Centraliza o texto */
+    width: 100%; /* Ocupa todo o espaço disponível */
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 2%;
+    }
+
+    header img {
+        width: 40%;
+        margin-left: 0;
+    }
+
+    header div {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 2%;
+    }
+
+    .content {
+        flex-direction: column;
+    }
+
+    .contact-column,
+    .form-column {
+        width: 100%;
+        margin-right: 0;
+        margin-left: 0;
+    }
+
+    .form-column {
+        margin-top: 2%;
+    }
+}
+
+@media (max-width: 480px) {
+    header button {
+        padding: 1% 2%;
+        font-size: 0.8em;
+    }
+
+    #direitos_reservados {
+        margin-left: 0;
+    }
+}

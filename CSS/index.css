@@ -1,0 +1,259 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+}
+
+header {
+    background-color: #4682B4; 
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    max-width: 200px; 
+    margin-left: 2%;
+}
+
+header div {
+    display: flex;
+    gap: 10px; 
+}
+
+header button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4682B4; 
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+header button:hover {
+    background-color: white; 
+    color: #4682B4; 
+}
+
+.banner {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    background-image: url('../IMG/banner.png'); /* Substitua pelo caminho da sua imagem */
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-content {
+    text-align: center;
+    color: white;
+}
+
+.banner h1 {
+    font-size: 48px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 10px 20px;
+    border-radius: 5px;
+    margin: 0;
+}
+
+.banner h2 {
+    font-size: 24px;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 15px;
+    border-radius: 5px;
+    margin-top: 10px;
+}
+
+.gallery, .suite-section, .extra-section {
+    padding: 20px;
+    text-align: center;
+}
+
+.gallery h2, .suite-section h2, .extra-section h2 {
+    margin-bottom: 20px;
+}
+
+.gallery {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.gallery .photo {
+    flex: 1 1 calc(33.333% - 40px);
+    margin: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.gallery .photo img {
+    width: 100%;
+    height: auto;
+}
+
+.gallery .photo p {
+    padding: 10px;
+}
+
+.suite-section {
+    text-align: center;
+}
+
+.suite-section h2 {
+    margin-bottom: 20px;
+}
+
+.suite-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+.suite {
+    width: 300px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    background-color: #4682B4;
+    color: white;
+}
+
+.suite img {
+    width: 100%;
+    height: auto;
+}
+
+.suite p {
+    padding: 10px 0;
+}
+
+.suite .reserve-button {
+    background-color: #333;
+    color: white;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    display: inline-block;
+}
+
+.extra-section {
+    margin-top: 20px;
+    background-color: #4682B4;
+}
+
+.extra-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.extra-item {
+    flex: 1 1 calc(25% - 40px);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    padding: 10px;
+    background-color: white;
+}
+
+.extra-item img {
+    width: 100%;
+    height: auto;
+}
+
+.extra-item p {
+    padding: 10px 0;
+}
+
+footer {
+    width: 100%;
+    padding: 20px;
+    background-color: #989696;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
+    bottom: 0;
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header div {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+    }
+
+    .container form input,
+    .container form button {
+        max-width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    footer div {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    header button {
+        padding: 5px 10px;
+        font-size: 0.9em;
+    }
+
+    .extra-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .extra-item {
+        width: 100%;
+    }
+}
+
+#direitos_reservados {
+    text-align: center;
+    font-size: 15px;
+    color: black;
+}
+
+#atracoes{
+    font-size: 20px;
+    color: white;
+}

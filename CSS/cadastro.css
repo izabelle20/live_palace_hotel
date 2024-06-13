@@ -1,0 +1,163 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+header {
+
+    
+    background-color: #4682B4; 
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    max-width: 200px; 
+    margin-left: 2%;
+}
+
+header div {
+    display: flex;
+    gap: 10px; 
+}
+
+header button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4682B4; 
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+header button:hover {
+    background-color: white; 
+    color: #4682B4; 
+}
+
+.container {
+    text-align: center;
+    margin: 0 auto;
+    width: 60%;
+    padding: 20px;
+}
+
+.container h2 {
+    margin-bottom: 20px;
+}
+
+.container form {
+    display: flex;
+    flex-direction: column;
+    align-items: center; /* Center the form items */
+}
+
+.container form input {
+    margin-bottom: 10px;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    width: 100%; /* Full width */
+    max-width: 300px; /* Optional: Limit the max width */
+}
+
+.container form button {
+    padding: 5px;
+    border: none;
+    background-color: #4682B4;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    width: 100px;
+}
+
+.container form button:hover {
+    background-color: white; 
+    color: #4682B4; 
+}
+
+footer {
+    width: 100%;
+    padding: 20px;
+    background-color: #989696;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 17%;
+}
+
+footer p {
+    margin: 0;
+    text-align: center; /* Centraliza o texto */
+    width: 100%; /* Ocupa todo o espaço disponível */
+}
+
+.error-message {
+    color: red;
+}
+
+@media (max-width: 768px) {
+    header {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    header div {
+        width: 100%;
+        display: flex;
+        justify-content: space-between;
+        padding-top: 10px;
+    }
+
+    .container {
+        width: 100%;
+        padding: 10px;
+        box-shadow: none;
+        border-radius: 0;
+        margin-top: 0;
+    }
+
+    .container form input,
+    .container form button {
+        max-width: 100%;
+    }
+
+    footer {
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        justify-content: center;
+    }
+
+    footer div {
+        margin-bottom: 10px;
+    }
+}
+
+@media (max-width: 480px) {
+    header {
+        padding: 10px;
+    }
+
+    header h1 {
+        font-size: 1.2em;
+    }
+
+    header button {
+        padding: 5px 10px;
+        font-size: 0.9em;
+    }
+}
+
+#direitos_reservados {
+    text-align: center;
+    font-size: 15px;
+    color: black;
+    margin-left: 115%; /* Este valor pode ser ajustado conforme necessário */
+}

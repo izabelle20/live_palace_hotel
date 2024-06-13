@@ -1,0 +1,78 @@
+/* Estilo para o corpo do documento */
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    margin: 0;
+    padding: 0;
+}
+
+/* Estilo para o cabeçalho */
+header {
+    background-color: #333;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+}
+
+/* Estilo para a imagem do logo */
+header img {
+    width: 200px; /* Ajuste conforme necessário */
+}
+
+/* Estilo para o formulário de login */
+.login {
+    width: 90%;
+    max-width: 400px; /* Limita a largura máxima do formulário */
+    margin: 50px auto; /* Centraliza verticalmente e ajusta margens */
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+}
+
+.login h2 {
+    text-align: center;
+    margin-bottom: 20px; /* Espaçamento inferior para o título */
+}
+
+.login label {
+    display: block;
+    margin-bottom: 8px;
+}
+
+.login input[type="email"],
+.login input[type="password"],
+.login input[type="submit"] {
+    width: 90%;
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ccc;
+    border-radius: 3px;
+    box-sizing: border-box;
+}
+
+.login input[type="submit"] {
+    background-color: #333;
+    color: white;
+    cursor: pointer;
+}
+
+.login input[type="submit"]:hover {
+    background-color: #555;
+}
+
+.login p {
+    text-align: center;
+    margin-top: 10px;
+}
+
+/* Estilo para o rodapé */
+footer {
+    background-color: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+}

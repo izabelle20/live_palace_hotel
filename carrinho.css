@@ -1,0 +1,120 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0; /* Cor de fundo para todo o corpo */
+}
+
+header {
+    background-color: #4682B4;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+header img {
+    max-width: 200px;
+    margin-left: 2%;
+}
+
+header div {
+    display: flex;
+    gap: 10px;
+}
+
+header button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4682B4;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+}
+
+header button:hover {
+    background-color: white;
+    color: #4682B4;
+}
+
+.container {
+    text-align: center;
+    padding: 20px;
+    background-color: #fff; /* Cor de fundo para o container principal */
+    margin: 20px auto; /* Centraliza o container na página */
+    max-width: 800px; /* Largura máxima do container */
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+.container h2 {
+    margin-top: 0; /* Remove o espaço superior do título */
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 20px 0;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: center;
+}
+
+table th {
+    background-color: #4682B4;
+    color: white;
+}
+
+table td a {
+    color: #4682B4;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+table td a:hover {
+    text-decoration: underline;
+}
+
+/* Estilo do botão "Finalizar Compra" */
+.container .finalizar-button {
+    padding: 10px 20px;
+    border: none;
+    background-color: #4682B4;
+    color: white;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 15px;
+    margin-top: 20px;
+}
+
+.container .finalizar-button:hover {
+    background-color: white;
+    color: #4682B4;
+}
+
+
+footer {
+    width: 100%;
+    padding: 20px;
+    background-color: #989696;
+    display: flex;
+    justify-content: space-between;
+    align-items: center; /* Alinha itens verticalmente */
+    text-align: center; /* Alinha texto horizontalmente */
+    box-shadow: 0 -1px 10px rgba(0, 0, 0, 0.1);
+    position: fixed; /* Fixa o rodapé na parte inferior da tela */
+    bottom: 0; /* Coloca o rodapé na parte inferior */
+    left: 0; /* Alinha o rodapé à esquerda */
+}
+
+footer p {
+    margin: 0;
+    text-align: center;
+    width: 100%;
+}
